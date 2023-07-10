@@ -1,107 +1,131 @@
+<div align="center">
+  <h1>🧮 math-magicians</h1>
+</div>
 
-# 📗 Table of Contents
+<!-- TABLE OF CONTENTS -->
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
+# 📖 Table of Contents
+
+- [About the Project](#about-project)
+  - [🛠️ Built With](#built-with)
     - [Tech Stack](#tech-stack)
-- [Key Features](#key-features)
-- [🚀 Live Demo](#live-demo)
+    - [🔑 Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+  - [💻 Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Run Tests](#run-tests)
+    - [Build](#build)
+    - [Webpack Development Server](#webpack-development-server)
+  - [👤 Author](#author)
+  - [🔮 Future Features](#future-features)
+  - [🤝 Contributing](#contributing)
+  - [⭐️ Show Your Support](#show-your-support)
+  - [🙏 Acknowledgments](#acknowledgments)
+  - [📝 License](#license)
 
-- [💻 Getting Started](#getting-started)
+# 📖 About the Project <a name="about-project"></a>
 
-  - [setup](#usage)
-  - [installation](#installation)
-  - [Usage](#usage)
-  - [Run test](#run-tests)
-  - [Prerequisites](#prerequisites)
+**math-magicians** is a web application designed for mathematics enthusiasts. It is a Single Page App (SPA) that provides users with the ability to perform simple calculations and discover random math-related quotes.
 
-- [👥 Authors](#authors)
+The purpose of the project is to create an intuitive and user-friendly calculator application that allows users to perform basic calculations on any device with an internet connection. Additionally, the application provides inspirational and thought-provoking math-related quotes to inspire users.
 
-- [⭐️ Show your support](#support)
-
-- [📝 License](#license)
-
-<!-- PROJECT DESCRIPTION -->
-
-# 📖  
-
-## Web calculator
-
-  <a name="about-project"></a>
-This project consist of a web based calculator, fully built with javascript and react as front-end library.
-
-## 🛠 Built With <a name="built-with"></a>
+## 🛠️ Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Client</summary>
+  <summary>🖥️ Client</summary>
   <ul>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
-    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-     <li><a href="https://create-react-app.dev/">react.js</a></li>
-          <li><a href="https://reactrouter.com/en/main">react router</a></li>
-<li><a href="https://webpack.js.org/">Weback</a></li>
+    <li><a href="https://www.w3schools.com/REACT/">React</a></li>
+    <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+    <li><a href="https://www.w3schools.com/html/">HTML</a></li>
   </ul>
 </details>
 
-## 🚀 Live Demo <a name="live-demo"></a>
-<!-- Tha application is currently available at the following [link](https://djibrilm.github.io/todo-app/dist/) -->
-Currently the live demo is not available since the application is in an early stage of development, please patient as we working on providing an amazing product.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p
+<!-- FEATURES -->
+
+### 🔑 Key Features <a name="key-features"></a>
+
+- ✨ **Simple Calculations**: Users can make basic calculations such as addition, subtraction, multiplication, and division. The application provides an intuitive user interface where users can input numbers and operators to perform the desired calculations.
+
+- 🏅 **Random Math Quotes**: The application offers a collection of inspirational and thought-provoking math-related quotes. Users can read a randomly generated quote by simply refreshing the page or clicking a dedicated button.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [🔗 Live Demo Link](https://kit0-0.github.io/math-magicians/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+### Prerequisites
+
+To run this project, you need the following:
+
+- 🌐 Web browser
+- 🐙 Git
+- 👨‍💻 Code editor
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-```sh
-  cd desired-folder
-  git clone git@github.com:myaccount/my-project.git
+```bash
+git clone https://github.com/kit0-0/math-magicians.git
 ```
 
-### Installation
+### Install
 
-Install this project with:
+To install all dependencies, run the following command:
 
-```sh
-  cd cloned-folder
-  npm install
+```bash
+npm install
 ```
 
-### Usage
+### Run Tests
 
-To run the project,
+To run tests, use the following commands:
 
-```js
-npm start 
+- To track CSS linter errors, run:
+```bash
+npx stylelint "**/*.{css,scss}"
+```
+- To track JavaScript linter errors, run:
+```bash
+npx eslint "**/*.{js,jsx}"
 ```
 
-To run the linters, use `npm run lint .` from the root directory of the project.
+### Build
 
-### Run-tests
+To build the project, run the following command:
 
-There are currently no tests in this project.
+```bash
+npm run build
+```
 
-### Prerequisites
+### Webpack Development Server
 
-In order to run this project you need:
+To run the webpack development server, execute the following command:
 
-- web browser
+```bash
+npm start
+```
 
-- nodejs
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-- npm
+<!-- AUTHOR -->
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
 
 - GitHub: [@DjibrilMugisho](https://github.com/DjibrilM?tab=overview&from=2023-04-01&to=2023-04-26)
 - Twitter: [@djibrilM](https://twitter.com/DjibrilMugisho)
@@ -109,34 +133,56 @@ In order to run this project you need:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🔭 Future Features <a name="future-features"></a>
+<!-- FUTURE FEATURES -->
 
-- [x] **webpack**
-- [x] **backend CRUD**
+## 🔮 Future Features <a name="future-features"></a>
+
+- [ ] 📱 **Add Animation**: Enhance the user interface with smooth animations and transitions to make the user experience more engaging and interactive.
+
+- [ ] 📝 **Add Model**: Implement a mathematical model or algorithm to perform advanced calculations, such as trigonometric functions or logarithms, providing users with a wider range of mathematical operations.
 - [ ] **styling**
 - [ ] **calculator**
 - [ ] **testing**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTRIBUTING -->
+
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+Contributions to Math Magicians are welcome! If you would like to contribute, please follow these guidelines:
+
+1. Fork the repository and create a new branch for your contribution.
+2. Make your changes and ensure that the code is properly formatted.
+3. Write clear and concise commit messages.
+4. Push your branch to your forked repository.
+5. Submit a pull request detailing the changes you've made.
+
+Feel free to check the [issues page](https://github.com/kit0-0/math-magicians/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ⭐️ Show your support <a name="support"></a>
+<!-- SHOW YOUR SUPPORT -->
 
-If you like this project don't for get to leave a star, and leave your feedback.
+## ⭐️ Show Your Support <a name="show-your-support"></a>
+
+If you like this project, give it a ⭐️.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgments"></a>
+
+I would like to thank Microverse for providing guidance and support during the development of this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for all the inspiration and great support offered for this project.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/olanikegloria/mobile-first/blob/main/LICENSE)# Awesome-books
+This project is licensed under the [MIT License](./LICENSE).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
