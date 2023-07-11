@@ -1,33 +1,33 @@
 :root {
-    --gray-200: rgba(128, 128, 128, 0.141);
-    --gray-400: rgba(75, 75, 75, 0.364);
-    --gray-300: rgba(102, 102, 102, 0.215);
-    --black-200: rgba(51, 50, 50, 0.336);
-    --black-400: rgb(46, 46, 46);
-    --orange-200: rgba(225, 148, 6, 0.627);
-    --orange-300: rgba(225, 148, 6, 0.555);
+  --gray-200: rgba(128, 128, 128, 0.141);
+  --gray-400: rgba(75, 75, 75, 0.364);
+  --gray-300: rgba(102, 102, 102, 0.215);
+  --black-200: rgba(51, 50, 50, 0.336);
+  --black-400: rgb(46, 46, 46);
+  --orange-200: rgba(225, 148, 6, 0.627);
+  --orange-300: rgba(225, 148, 6, 0.555);
 }
 
 .calculator {
-    max-width: 650px;
-    border-bottom: none;
-    margin: auto;
-    margin-top: 40px;
-    border-left: 1px solid rgba(0, 0, 0, 0.148);
-    border-right: 1px solid rgba(0, 0, 0, 0.148);
-    border-top: 1px solid rgba(0, 0, 0, 0.148);
+  max-width: 650px;
+  border-bottom: none;
+  margin: auto;
+  margin-top: 40px;
+  border-left: 1px solid rgba(0, 0, 0, 0.148);
+  border-right: 1px solid rgba(0, 0, 0, 0.148);
+  border-top: 1px solid rgba(0, 0, 0, 0.148);
 }
 
 .calculator :last-child :last-child {
-    width: 49.8%;
+  width: 49.8%;
 }
 
-.calculator :last-child> :nth-child(2) {
-    width: 50%;
+.calculator :last-child > :nth-child(2) {
+  width: 50%;
 }
 
 .output {
-    width: 100%;
-    height: 100px;
-    background: var(--gray-400);
+  width: 100%;
+  height: 100px;
+  background: var(--gray-400);
 }
