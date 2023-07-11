@@ -155,6 +155,7 @@ const calculatorReducer = (state, actions) => {
             }
         }
 
+            
         case "action": {
             const newState = state;
             if (actions.payload.value === "AC" && !Number.isNaN(state.result)) {
