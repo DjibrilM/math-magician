@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import classes from "../styles/calculator.module.css";
 import Column from "./Column";
 import Output from "./Output";
-import calculate from './calculate';
+import calculate from '../logic/calculate';
 
 
 
