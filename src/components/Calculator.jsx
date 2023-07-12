@@ -1,7 +1,10 @@
-import React, { useReducer } from "react";
+import React, { useState } from "react";
 import classes from "../styles/calculator.module.css";
 import Column from "./Column";
 import Output from "./Output";
+import calculate from './calculate';
+
+
 
 const column1 = [
     {
@@ -21,7 +24,7 @@ const column1 = [
     },
     {
         outputOperation: "÷",
-        operationSign: "/",
+        operationSign: "÷",
         type: "calculatorOperation"
     }
 ];
@@ -45,7 +48,7 @@ const column2 = [
     },
     {
         outputOperation: "×",
-        operationSign: "*",
+        operationSign: "x",
         type: "calculatorOperation"
     }
 ];
@@ -122,77 +125,21 @@ const columnsList = [
     column5
 ];
 
-const calculatorReducer = (state, actions) => {
-    switch (actions.type) {
-        case "value": {
-            const newState = state;
-            newState.outputValue = newState.outputValue + actions.payload.outputValue;
-            newState.calculationInput = newState.calculationInput + actions.payload.value;
-            return { ...newState, result: "", isError: false };
-        }
-
-        case "calculatorOperation": {
-            let newState = state;
-            let inputArr = newState.calculationInput.split("");
-            let outputArr = newState.outputValue.split("");
-            const lastChar = ++inputArr[inputArr.length - 1];
-
-            if (Number.isNaN(lastChar)) {
-                inputArr[inputArr.length - 1] = actions.payload.value;
-                outputArr[inputArr.length - 1] = actions.payload.outputValue;
-
-                inputArr = inputArr.join("");
-                outputArr = outputArr.join("");
-
-                newState.calculationInput = inputArr;
-                newState.outputValue = outputArr;
-
-                return { ...newState, result: "", isError: false };
-            } else {
-                newState.calculationInput = newState.calculationInput + actions.payload.value;
-                newState.outputValue = newState.outputValue + actions.payload.outputValue;
-                return { ...newState, result: "", isError: false };
-            }
-        }
-
-            
-        case "action": {
-            const newState = state;
-            if (actions.payload.value === "AC" && !Number.isNaN(state.result)) {
-                newState.calculationInput = ""
-                newState.outputValue = "";
-                newState.result = "";
-
-                return { ...newState, result: "", isError: false };
-            } else if (actions.payload.value === "+/-") {
-                return { ...state, result: "", isError: false };
-            } else if (actions.payload.value === "=") {
-                try {
-                    const evaluateCalculation = eval(state.calculationInput);
-                    return { ...state, result: evaluateCalculation, isError: false }
-                } catch (error) {
-                    return { ...state, isError: true }
-                }
-            }
-        }
-    }
-};
-
 
 const Calculator = () => {
-    const [state, dispatch] = useReducer(calculatorReducer, {
-        outputValue: "",
-        calculationInput: "",
-        result: "",
-        isError: false,
-    });
+    const [state, setState] = useState({});
+
+    const outputValue = state.next || state.total || '0';
 
     const onPress = (dts) => {
-        dispatch(dts);
+        const newState = calculate(state, dts.payload.value);
+        setState(newState);
+
     };
 
     return <div className={classes.calculator}>
         <Output
+            output={outputValue}
             result={state.result}
             error={state.isError}
             outputValue={state.outputValue}
