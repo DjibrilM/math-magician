@@ -46,7 +46,8 @@
       ]
   }
   ,
-  "devDependencies": {
+  "devDependencies": {  
+     "big.js": "^6.2.1",
     "@babel/core": "^7.22.8",
     "@babel/eslint-parser": "^7.22.7"
     ,
