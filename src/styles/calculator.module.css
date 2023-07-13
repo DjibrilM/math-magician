@@ -8,11 +8,19 @@
   --orange-300: rgba(225, 148, 6, 0.555);
 }
 
+
+main {
+  width: 100%;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 .calculator {
-  max-width: 650px;
+  max-width: 600px;
+  width: 100%;
   border-bottom: none;
-  margin: auto;
-  margin-top: 40px;
   border-left: 1px solid rgba(0, 0, 0, 0.148);
   border-right: 1px solid rgba(0, 0, 0, 0.148);
   border-top: 1px solid rgba(0, 0, 0, 0.148);
