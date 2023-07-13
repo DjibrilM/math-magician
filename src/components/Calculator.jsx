@@ -6,6 +6,7 @@ import calculate from '../logic/calculate';
 
 
 
+
 const column1 = [
     {
         outputOperation: "AC",
