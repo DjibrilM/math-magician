@@ -2,39 +2,15 @@ import React from 'react';
 import Calculator from './components/Calculator';
 import Quotes from './components/quotes';
 import { Suspense } from 'react';
-import { NavLink, Link } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { Routes } from 'react-router-dom';
-
-
-
+import Header from './components/Header';
 
 function App() {
   return (
     <Suspense fallback={<h1>....loading</h1>}>
       <div className="App">
-        <header className='main-header'>
-          <div className="header-container">
-            <Link to="/">
-              <h2>Math Magician</h2>
-            </Link>
-
-            <ul>
-              <NavLink className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              } to={'/'}>Home</NavLink>
-
-              <NavLink className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              } to={'/calculator'}>Calculator</NavLink>
-
-              <NavLink className={({ isActive, isPending }) =>
-                isPending ? "pending" : isActive ? "active" : ""
-              } to={'/quotes'}>Quotes</NavLink>
-
-            </ul>
-          </div>
-        </header>
+        <Header />
 
         <main>
           <Routes>
